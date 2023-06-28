@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/2-removebg-preview.png">
+    <link rel="stylesheet" href="jogos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTER X CUIABÁ</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+    <!----------------------------------------------------cabeça-------------------->
+    <header>
+
+        <div class="container">
+            <div class="flex">
+                <a href="index.html"><img  id="logo" src="img/I__1_-removebg-preview.png" alt="#"></a>
+                <nav>
+                    <ul>
+                        <li>
+                            <h1>INTER X CUIABÁ</h1>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+                <div class="contato">
+                    <a href=""><img src="img/8-removebg-preview.png" alt=""></a>
+                    <a href="" class=" shoppingCartButton"><img src="img/7-removebg-preview.png" alt=""></a>
+
+                    <div class="producstOnCart hide">
+                        <div class="overlay"></div>
+                        <div class="top" id="top-cart">
+                            <button id="closeButton">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <h3>Carrinho de Compras</h3>
+                        </div>
+                        <ul id="buyItems">
+                            <h4 class="empty">O seu carrinho está vazio</h4>
+                            <!-- <li class="buyItem">
+                            <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                            <div>
+                                <h5>Products Name</h5>
+                                <h6>$199</h6>
+                                <div>
+                                    <button>-</button>
+                                    <span class="countOfProduct">1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </li> -->
+                        </ul>
+                        <button class="btn checkout hidden">Comprar</button>
+                    </div>
+    
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!------------------------------------cabeça---------------------------------------->
+
+    <!-------------------------------------cards----------------------------------------->
+
+    <section class="caixa1">
+        <div class="card1">
+            <h3> último jogo</h3>
+            <iframe width="699" height="393" src="https://www.youtube.com/embed/ku3NFL9kjrI" title="INTERNACIONAL 1 x 0 CUIABÁ | MELHORES MOMENTOS | 26ª RODADA BRASILEIRÃO 2022 | ge.globo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="card2">
+
+
+            <h3>Histórico dos Confrontos</h3>
+            <br>
+            <p>  Internacional. 1 vitória. 2 empates. 1 derrota / Cuiabá. 1 vitória. 2 empates. 1 derrota. 2 gols.</p>
+        </div>
+
+    </section>
+
+    <section class="caixa2">
+
+        <div class="card3">
+            <h3>Mapa de Tribunas</h3>
+            <img src="https://ajuda.internacional.com.br/hc/article_attachments/360081152074/MAPA_SETORES.jpg" alt="">
+        </div>
+
+        <div class="card4">
+            <h3>localização</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.9476655493895!2d-51.24136562501644!3d-30.06506297676985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197893f164a0c1%3A0x6870343016fa0a6e!2sBeira-Rio%20Cora%C3%A7%C3%A3o%20do%20Gigante!5e1!3m2!1spt-BR!2sbr!4v1687367746286!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <h1 id="compra">Compre o seu Ingresso</h1>
+
+    <section class="caixa3">
+
+        <div class="card5">
+            <h4>Mandante e Visitante</h4>
+            <h4>Setores disponíveis para a compra: 330 e 331 para colorados, 340 para visitantes.</h4>
+            <br>
+            <h4>Ingresso de Imprensa: Este ingresso tem acesso livre à beira do campo, zona mista, sala de entrevista e
+                deslocamento livre entre as arquibancadas</h4>
+        </div>
+
+        <div class="card6">
+          
+            <div class="product">
+                <div class="product-under">
+                    <figure class="product-image">
+                        <img src="ims/redt.png" alt="popular labtops and computers" />
+                        <div class="product-over">
+                            <div class="box">
+                                <select id="select">
+                                    <option selected disabled>Escolha um Lugar</option>
+                                    <option value="Visitante">Visitante</option>
+                                    <option value="Mandante">Mandante</option>
+                                    <option value="Imprensa">Imprensa</option>
+                                   
+                                </select>
+                            </div>
+                            <h4 class="productName">Red Hot</h4>
+                        </div>
+                    </figure>
+
+
+                    <div class="product-summary">
+                        <button class="btn btn-small addToCart" data-product-id="3">
+                            Adicionar Ao Carrinho
+                        </button>
+
+
+                        <h6 class="price">
+                            <span class="cifrao"> R$ </span><span class="priceValue">150</span>
+                        </h6>
+
+                        <select id="select">
+                            <option selected disabled>Escolha um Lugar</option>
+                            <option value="Visitante">Visitante</option>
+                            <option value="Mandante">Mandante</option>
+                            <option value="Imprensa">Imprensa</option>
+                           
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!---------------menu responsivo------------- -->
+     <div class="menuzinho">
+        <div class="esporte"> </div>
+        <div class="teatro"> </div>
+        <div class="nsei"> </div>
+        <div class="cinema"> </div>
+        <div class="musica"> </div>
+    </div>
+    <!---------------menu responsivo------------- -->
+
+<!------------------------------------------ FOOTER ------------------------------------------>
+
+
+<footer>
+    <div class="links">
+
+        <ol class="listol">
+            <h2> INSTITUCIONAL </h2>
+            <li><a href="#">Termos e condições</a></li>
+            <li><a href="#">Sobre o site</a></li>
+            <li><a href="#">Mapa do site</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ol>
+
+        <ol class="listol">
+            <h2>FORMAS DE PAGAMENTOS</h2>
+            <li><a href="#"><img src="https://devtools.com.br/img/pix/logo-pix-png-icone-520x520.png" alt="" width="45px" style="border-radius:12px;"></a></li>
+
+
+        </ol>
+        <div class="redes">
+            <a href="#"><img src="img/insta2.png" id="redes" alt=""></a>
+            <a href="#"><img src="img/email.png" id="redes" alt=""></a>
+
+        </div>
+    </div>
+    <div class="copy">
+        <h1 class="logo"> level up</h1>
+        <p> Todos os direitos reservados para a página level up 2023&reg;&copy;</p>
+    </div>
+</footer>
+
+<script src="cart.js"></script>
+</body>
+
+</html>

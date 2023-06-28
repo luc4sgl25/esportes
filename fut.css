@@ -1,0 +1,1125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #000000e3;
+}
+
+.hh {
+    text-align: center;
+    background-color: #FF0077;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 15px;
+    padding: 7px;
+    margin-top: 100px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.h {
+    text-align: center;
+    background-color: #FF0077;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 15px;
+    padding: 7px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    line-height: 40px;
+}
+
+.container {
+    background-color: #000000;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    padding-right: 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li a {
+    color: #ff0077;
+    text-decoration: none;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #ff0077;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header a img {
+    width: 40px;
+    margin-top: 5px;
+}
+
+header a img:hover {
+
+    width: 45px;
+    transition: 1s;
+}
+
+button {
+    height: 65px;
+    padding: 5px 5px;
+    background: transparent;
+    border: 2px solid;
+    color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+/* MENU LATERAL  */
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background-color: black;
+    padding: 100px 0px 30px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: scroll;
+    padding-left: 5px;
+    z-index: 10;
+}
+
+nav.menu-lateral.expandir {
+    width: 350px;
+}
+
+.btn-expandir {
+    width: auto;
+
+}
+
+.btn-expandir>i {
+    color: #FF0077;
+    cursor: pointer;
+    font-size: 70px;
+
+}
+
+
+
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 1s;
+}
+
+ul li.ativo {
+    background-color: #392b38;
+}
+
+ul li.item-menu:hover {
+    background-color: #ff00775f;
+
+}
+
+ul li.item-menu a:hover {
+    color: black;
+    transition: 1s;
+}
+
+ul li.item-menu a {
+    color: #Ff0077;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .text-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 1.87rem;
+}
+
+ul li.item-menu a .im {
+    width: 40px;
+}
+
+/* barra lateral */
+::-webkit-scrollbar {
+    background-color: black;
+    border: #FF0077 solid 1px;
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF0077;
+}
+
+/*  carrossel  */
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 140px;
+   
+    
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+
+.slides input {
+    display: none;
+
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+
+
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ff0077;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover {
+    background-color: #ff0077;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #ff0077;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #ff0077;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #ff0077;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #ff0077;
+}
+
+/*  carrossel  */
+
+/*SISTEMA DE CARDS*/
+
+.cartao {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 0 0;
+}
+
+.cartao2 {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+.cartao3 {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+.cartao4 {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+.cartao5 {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+.cartao6 {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+
+.card {
+
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/imagesrc/25287524.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    margin-bottom: 40px;
+
+}
+
+.card2 {
+
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/filestore/5/3/1/3/5/9/3_ee94948a0b922f5/3953135_55b873ed03cfcfa.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+
+}
+
+.card3 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/filestore/3/2/2/8/1/6/2_a2c177723d472fe/2618223_4ac16cfce3d022a.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    box-shadow: 1px 1px 10px #FF0077;
+
+}
+
+.card4 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/imagesrc/25412958.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    box-shadow: 1px 1px 10px #FF0077;
+
+}
+
+.card5 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/filestore/8/0/9/3/3/2/4_2e27c89cec48a4f/4233908_2cfd4d2ff3b88f3.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+   
+
+}
+
+.card6 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.rbsdirect.com.br/filestore/6/4/3/3/7/5/1_3f1399eb7f0bf9c/1573346_41ea14faf892b46.jpg?w=700) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card7 {
+
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://i0.wp.com/judorio.org/wp-content/uploads/2022/10/277002337_4877627322354923_8214036694971643480_n.jpg?fit=1200%2C849&ssl=1) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+}
+
+.card8 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://1.bp.blogspot.com/-4RgG7yq4bHE/X5cy0PDcDPI/AAAAAAAADUg/MMlWmCusq7E1TX4zA_KULJQXrZswR2c6gCLcBGAsYHQ/s2048/Judo%2BBudapeste%2B%2528Ben%2BUrban-IJF%2529.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    box-shadow: 1px 1px 10px #FF0077;
+
+}
+
+.card9 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://diariodofla.com.br/wp-content/uploads/2021/09/51408341233_8b42b59447_c.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+  
+
+}
+
+.card10 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(img/Design\ sem\ nome\ \(1\).png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+   
+
+}
+
+.card11 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(img/bra.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    box-shadow: 1px 1px 10px #FF0077;
+
+}
+
+.card12 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(img/bra2.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+  
+
+}
+
+.card13 {
+
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.esportif.com.br/images/conteudos/eventos/1685999391.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    
+
+
+}
+
+.card14 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://repositorio.santamaria.rs.gov.br/midia/2023/03/F10-96473.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+ 
+
+}
+
+.card15 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(img/Design\ sem\ nome.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+  
+
+}
+
+.card16 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(img/bra\ x\ chi.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+  
+
+}
+
+.card17 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.cpb.org.br/content/imagens/Modalidades/2022/canoagem-1.png) no-repeat center;
+    background-color: #020202;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+ 
+
+}
+
+.card18 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://s3.us-east-1.amazonaws.com/vnda-cockpit/www-ortoponto-com-br/2021/06/15/60c8daa444b30303072-atletas-paralimpicos-para-se-inspirar-conheca-4-nomes.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+
+}
+
+.info{
+    font-family: 'Ysabeau Infant', sans-serif;
+    margin: -2vh;
+}
+
+.event-info {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "empty title title"
+        "info info action";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.event-info * {
+    position: relative;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.additional-info {
+    grid-area: info;
+}
+
+.price {
+    position: absolute;
+    top: -20%;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #ff0077;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.event-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 400%;
+    background: linear-gradient(90deg, rgba(255, 152, 200, 1) 0%, rgba(220, 29, 143, 1) 78%);
+    transform: rotate(-8deg);
+    border-top-right-radius: 100px;
+}
+
+/*SISTEMA DE CARDS*/
+
+/* -------------Menu responsivo---------------- */
+.menuzinho {
+    height: 100%;
+    display: none;
+}
+
+/* -------------Menu responsivo---------------- */
+
+/* FOOTER */
+
+
+footer {
+    bottom: 0px;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #000000;
+    font-family:'Raleway', sans-serif ;
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+footer .links,.copy {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-self: center;
+}
+
+footer a,footer ol {
+    text-decoration: none;
+}
+
+#redes {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+#redes:hover{
+    
+    transition: 0.5s;
+}
+
+.copy {
+    background-image: linear-gradient(to left, black, #FF0077);
+    width: 100%;
+    border-top-left-radius: 50%;
+}
+
+.logo {
+    font-family: 'Simply Rounded', sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    transition: all 2s;
+}
+
+.copy p {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#up {
+    color: #FF0077;
+}
+
+@media screen and (max-width:767px) and (max-width:1023px) {
+
+    nav.menu-lateral {
+        display: none;
+
+    }
+
+    .container {
+        background-color: black;
+        width: 100%;
+    }
+
+    header nav {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    button {
+        display: none;
+    }
+
+
+    .event-info::before {
+        width: auto;
+        height: auto;
+
+    }
+
+    .btn-expandir {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+
+    .cartao2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao p {
+        background-color: #FF0077;
+        padding: 5px;
+        border-radius: 5px;
+        color: #000;
+        margin: 1px;
+    }
+
+    .cartao2 p {
+        background-color: #FF0077;
+        padding: 5px;
+        border-radius: 5px;
+        color: #000;
+        margin: 1px;
+    }
+
+    .cartao3 p {
+        background-color: #FF0077;
+        padding: 5px;
+        border-radius: 5px;
+        color: #000;
+        margin: 1px;
+    }
+
+    .cartao4 p {
+        background-color: #FF0077;
+        padding: 5px;
+        border-radius: 5px;
+        color: #000;
+        margin: 1px;
+    }
+
+    .cartao5 p {
+        background-color: #FF0077;
+        padding: 5px;
+        border-radius: 5px;
+        color: #000;
+        margin: 1px;
+    }
+
+    .cartao6 p {
+        background-color: #FF0077;
+        border-radius: 5px;
+        color: #ffffff;
+
+    }
+
+    .card {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card2 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card3 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card4 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card5 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card6 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card7 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card8 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card9 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card10 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card11 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card12 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card13 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card14 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card15 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card16 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card17 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .card18 {
+        margin: 10px;
+        margin-right: 10px;
+        width: 370px;
+    }
+
+    .h {
+        text-align: center;
+        background-color: #FF0077;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px;
+        padding: 7px;
+    }
+
+    .hh {
+        text-align: center;
+        background-color: #FF0077;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px;
+        padding: 7px;
+        margin-top: 100px;
+    }
+
+    .slider {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: 200px;
+
+    }
+
+    .slide img {
+        width: 100%;
+
+    }
+
+    .manual-navigation {
+        display: none;
+    }
+
+    .manual-btn {
+        display: none;
+    }
+
+    .manual-btn:not(:last-child) {
+        display: none;
+    }
+
+    .manual-btn:hover {
+        display: none;
+    }
+
+    .navigation-auto {
+        display: none;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-image: url(img/2-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+        background-image: url(img/3-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-image: url(img/6-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .cinema {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-image: url(img/4-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+        background-image: url(img/1-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+}
